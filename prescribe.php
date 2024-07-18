@@ -33,10 +33,10 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
   $query=mysqli_query($con,"insert into prestb(doctor,pid,ID,fname,lname,appdate,apptime,disease,allergy,prescription) values ('$doctor','$pid','$ID','$fname','$lname','$appdate','$apptime','$disease','$allergy','$prescription')");
     if($query)
     {
-      echo "<script>alert('Prescribed successfully!');</script>";
+      echo "<script>alert('Prescrito com sucesso!');</script>";
     }
     else{
-      echo "<script>alert('Unable to process your request. Try again!');</script>";
+      echo "<script>alert('Não foi possível processar sua solicitação. Tente novamente!');</script>";
     }
   // else{
   //   echo "<script>alert('GET is not working!');</script>";
@@ -46,7 +46,7 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
 
 ?>
 
-<html lang="en">
+<html lang="pt-BR">
   <head>
 
 
@@ -66,7 +66,7 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
     
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Simplifica MED </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -119,18 +119,18 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
         <form class="form-group" name="prescribeform" method="post" action="prescribe.php">
         
           <div class="row">
-                  <div class="col-md-4"><label>Disease:</label></div>
+                  <div class="col-md-4"><label>Doença:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text" class="form-control" name="disease" required> -->
                   <textarea id="disease" cols="86" rows ="5" name="disease" required></textarea>
                   </div><br><br><br>
                   
-                  <div class="col-md-4"><label>Allergies:</label></div>
+                  <div class="col-md-4"><label>Alergias:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text"  class="form-control" name="allergy" required> -->
                   <textarea id="allergy" cols="86" rows ="5" name="allergy" required></textarea>
                   </div><br><br><br>
-                  <div class="col-md-4"><label>Prescription:</label></div>
+                  <div class="col-md-4"><label>Prescrição:</label></div>
                   <div class="col-md-8">
                   <!-- <input type="text" class="form-control"  name="prescription"  required> -->
                   <textarea id="prescription" cols="86" rows ="10" name="prescription" required></textarea>

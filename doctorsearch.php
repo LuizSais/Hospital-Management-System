@@ -2,7 +2,7 @@
  <?php #include("func.php");?>
 <html>
 <head>
-	<title>Doctor Details</title>
+	<title>Detalhes do Médico</title>
   <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
@@ -16,7 +16,7 @@ if(isset($_POST['doctor_search_submit']))
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['username']=="" & $row['password']=="" & $row['email']=="" & $row['docFees']==""){
-    echo "<script> alert('No entries found!'); 
+    echo "<script> alert('Nenhuma entrada encontrada!'); 
           window.location.href = 'admin-panel1.php#list-doc';</script>";
   }
   else {
@@ -26,10 +26,10 @@ if(isset($_POST['doctor_search_submit']))
 <table class='table table-hover'>
   <thead>
     <tr>
-      <th scope='col'>Username</th>
-      <th scope='col'>Password</th>
+      <th scope='col'>Usuário</th>
+      <th scope='col'>Senha</th>
       <th scope='col'>Email</th>
-      <th scope='col'>Consultancy Fees</th>
+      <th scope='col'>Taxas de Consulta</th>
     </tr>
   </thead>
   <tbody>";
@@ -46,7 +46,7 @@ if(isset($_POST['doctor_search_submit']))
           <td>$docFees</td>
         </tr>";
 	// }
-	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Back to dashboard</a></div></center></div></div></div>";
+	echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Voltar ao Painel</a></div></center></div></div></div>";
 }
   }
 	

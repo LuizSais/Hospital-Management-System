@@ -2,7 +2,7 @@
  <?php #include("func.php");?>
 <html>
 <head>
-	<title>User Messages</title>
+	<title>Mensagens do Usuário</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
 <body>
@@ -15,7 +15,7 @@ if(isset($_POST['mes_search_submit']))
   $result = mysqli_query($con,$query);
   $row=mysqli_fetch_array($result);
   if($row['name']=="" & $row['email']=="" & $row['contact']=="" & $row['message']==""){
-    echo "<script> alert('No entries found! Please enter valid details'); 
+    echo "<script> alert('Nenhuma entrada encontrada! Insira detalhes válidos'); 
           window.location.href = 'admin-panel1.php#list-doc';</script>";
   } 
   else {
@@ -25,10 +25,10 @@ if(isset($_POST['mes_search_submit']))
   <table class='table table-hover'>
     <thead>
       <tr>
-        <th scope='col'>User Name</th>
+        <th scope='col'>Usuário</th>
         <th scope='col'>Email</th>
-        <th scope='col'>Contact</th>
-        <th scope='col'>Message</th>
+        <th scope='col'>Contato</th>
+        <th scope='col'>Mensagem</th>
       </tr>
     </thead>
     <tbody>";
@@ -45,7 +45,7 @@ if(isset($_POST['mes_search_submit']))
             <td>$message</td>
           </tr>";
     
-    echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Back to your Dashboard</a></div></center></div></div></div>";
+    echo "</tbody></table><center><a href='admin-panel1.php' class='btn btn-light'>Voltar ao seu Painel</a></div></center></div></div></div>";
   }
   }
 	

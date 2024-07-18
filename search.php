@@ -7,7 +7,7 @@ if(isset($_POST['search_submit'])){
  $query="select * from appointmenttb where contact='$contact' and doctor='$docname';";
  $result=mysqli_query($con,$query);
  echo '<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,16 +18,16 @@ if(isset($_POST['search_submit'])){
   </head>
   <body style="background-color:#342ac1;color:white;text-align:center;padding-top:50px;">
   <div class="container" style="text-align:left;">
-  <center><h3>Search Results</h3></center><br>
+  <center><h3>Procurar Resultados</h3></center><br>
   <table class="table table-hover">
   <thead>
     <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
+      <th>Primeiro nome</th>
+      <th>Sobrenome</th>
       <th>Email</th>
-      <th>Contact</th>
-      <th>Appointment Date</th>
-      <th>Appointment Time</th>
+      <th>Contato</th>
+      <th>Data</th>
+      <th>Horário</th>
     </tr>
   </thead>
   <tbody>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -16,8 +16,8 @@
     </style>
   </head>
   <body style="background: -webkit-linear-gradient(left, #3931af, #00c6ff);color:white;padding-top:100px;text-align:center;">
-    <h3>Invalid Email-Id or Password!<br>Please try again.</h3><br><br>
-    <a href="index1.php" class="btn btn-outline-light">Try Again</a>
+    <h3>ID de e-mail ou senha inválida!<br>Por favor, tente novamente.</h3><br><br>
+    <a href="index1.php" class="btn btn-outline-light">Tente novamente</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
